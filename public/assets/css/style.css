@@ -1,0 +1,235 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+html {
+    background:  linear-gradient(to bottom,  #b0e3ee, #ffffff);
+}
+
+body {
+    font: 16px/1.6 arial, sans-serif;
+}
+
+header {
+    background-color: #59c6cc;
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 50px;
+    
+}
+
+.header-content {
+  display: flex; /* Menggunakan display flex untuk mengatur elemen secara horizontal */
+  align-items: center; /* Mengatur elemen secara vertikal untuk berada di tengah */
+}
+
+.header-text {
+  flex-grow: 1; /* Menyebabkan elemen ini mengisi sisa ruang yang tersedia di antara gambar dan navbar */
+}
+
+nav {
+  display: flex; /* Mengatur tata letak navbar agar elemen-elemen dalam navbar berada secara horizontal */
+  margin-left: 10px; /* Memberikan jarak antara elemen navbar dan elemen lainnya */
+}
+
+nav a {
+  margin-right: 10px; /* Memberikan jarak antara elemen-elemen navbar */
+  color: #F875AA;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+nav a:hover {
+    background-color: #a9dfe9;
+}
+
+h1 {
+    font: normal 32px/1.5 'Open Sans', sans-serif;
+    color: #00922c;
+    text-align: center;
+    padding-top: 16px;
+}
+
+header h2 {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #F875AA;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color:  #a9dfe9;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+.footer {
+    background-color: #59c6cc;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+
+    header {
+        padding-top: 40px;
+    }
+}
+
+.footer .footer-left {
+    width: 30%;
+}
+
+.footer h3 {
+    color: #ffffff;
+    margin: 0;
+    padding-bottom: 20px;
+    font-family: Georgia, 'Time New Roman', Times, serif;
+}
+
+.footer .footer-left img {
+    width: 25%;
+    vertical-align: middle;
+}
+
+.footer .footer-left .credit-cards {
+    width: 100%;
+}
+
+.footer .footer-copyright {
+    color: #F6F4EB;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+    padding-top: 10%;
+}
+
+.footer .footer-center {
+    width: 35%;
+}
+
+.footer .footer-center i {
+    background-color: #F875AA;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0px;
+}
+
+.footer .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer .footer-center p a {
+    color: #4682A9;
+    text-decoration: none;
+}
+
+.footer .footer-right {
+    width: 30%;
+}
+
+.footer .footer-about {
+    line-height: 20px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0px;
+}
+
+.footer .footer-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer .footer-media {
+    margin-top: 25px;
+}
+
+.footer .footer-media a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-color: #F875AA;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 50px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.footer .footer-media a:hover {
+    background-color: #a9dfe9;
+}
+
+@media (max-width: 880px) {
+
+    .footer .footer-left,
+    .footer .footer-center,
+    .footer .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+
+    .footer .footer-center i {
+        margin-left: 0px;
+    }
+
+}
