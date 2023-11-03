@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Controllers;
+use App\Controllers\BaseController;
 
 class Home extends BaseController
 {
@@ -8,4 +9,11 @@ class Home extends BaseController
     {
         return view('welcome_message');
     }
+
+    public function list()
+    {
+        return view('transaksi');
+    }
+
+    
 }

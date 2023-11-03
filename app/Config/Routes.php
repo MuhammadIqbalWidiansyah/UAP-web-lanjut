@@ -1,8 +1,10 @@
 <?php
 
 use CodeIgniter\Router\RouteCollection;
+use App\Controllers\TransaksiController;
 use App\Controllers\LoginController;
 use App\Controllers\BarangController;
+
 
 /**
  * @var RouteCollection $routes
