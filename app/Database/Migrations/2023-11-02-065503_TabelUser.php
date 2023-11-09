@@ -41,7 +41,7 @@ class TabelUser extends Migration
             ],
             'nomor_telepon' => [
                 'type'=> 'varchar',
-                'constraint' => '255'
+                'constraint' => '13'
             ],
             'created_at' => [
                 'type' => 'datetime',

@@ -33,6 +33,11 @@ class TabelProduk extends Migration
                 'constraint' => '6',
                 'unsigned' => true
             ],
+            'kategori_produk' => [
+                'type' => 'integer',
+                'constraint' => '11',
+                'unsigned' => true
+            ],
             'created_at' => [
                 'type' => 'datetime',
                 'null' => true
@@ -47,6 +52,7 @@ class TabelProduk extends Migration
             ]
         ]);
         $this->forge->addKey('produk_id', true, true);
+        $this->forge->addForeignKey('kategori_produk', 'kategori_produk', 'kategori_id');
         $this->forge->createTable('produk');
     }
 
