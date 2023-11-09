@@ -1,17 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
+<?= $this->extend('layouts/app') ?>
+<?= $this->section('content') ?>
+
     <!-- Container -->
-<div class="flex flex-wrap min-h-screen w-full content-center justify-center bg-gray-200 py-10">
+<div class="flex flex-wrap  w-full content-center justify-center ">
   
   <!-- Login component -->
-  <div class="flex shadow-md">
+  <div class="flex shadow-2xl">
     <!-- Login form -->
     <div class="flex flex-wrap content-center justify-center rounded-l-md bg-white" style="width: 24rem; height: 32rem;">
       <div class="w-72">
@@ -54,5 +48,5 @@
 
   </div>
 </div>
-</body>
-</html>
+
+<?= $this->endSection() ?>

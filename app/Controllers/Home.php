@@ -16,4 +16,11 @@ class Home extends BaseController
     }
 
     
+    public function tampil()
+    {
+        
+        return view('detail');
+    }
+
+    
 }
