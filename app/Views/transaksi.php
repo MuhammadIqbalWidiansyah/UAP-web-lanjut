@@ -1,100 +1,82 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transaksi</title>
-    <link rel="stylesheet" href="<?=base_url("assets/css/style.css")?>">
+<?= $this->extend('layouts/app') ?>
+<?= $this->section('content') ?>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-  <header>
-  <div class="header-content">
-    <img src="<?= base_url("assets/img/logo.jpg") ?>" alt="Logo Perusahaan" width="90px">
-    <div class="header-text">
-      <h2>RESTIQA SKINCARE</h2>
-    </div>
-    <nav>
-      <a href="#">Beranda</a>
-      <a href="#">Tentang</a>
-      <a href="#">Kontak</a>
-    </nav>
-  </div>
-</header>
-
-    <div class="container">
-      <h1>DAFTAR TRANSAKSI</h1>
-    </div>
-
-    <table>
-      <tr>
-        <th>Id Transaksi</th>
-        <th>Id User</th>
-        <th>Tanggal</th>
-        <th>Total</th>
-      </tr>
-      <tr>
-        <td>123455</td>
-        <td>Ika123</td>
-        <td>11-1-2023</td>
-        <td>300.0000</td>
-      </tr>
-      <tr>
-        <td>233455</td>
-        <td>Restu223</td>
-        <td>11-2-2023</td>
-        <td>150.0000</td>
-      </tr>
-      <tr>
-        <td>382455</td>
-        <td>Iqbal323</td>
-        <td>11-2-2023</td>
-        <td>200.0000</td>
-      </tr>
-    </table>
-
-    <footer class="footer">
-        <div class="footer-left">
-            <h3>Payment Method</h3>
-            <div class="credit-cards">
-                <img src="img/visa.png" alt="">
-                <img src="img/mastercard.png" alt="">
-                <img src="img/paypal.png" alt="">
-            </div>
-            <p class="footer-copyright">2021 Restiqa Skincare</p>
-        </div>
-
-        <div class="footer-center">
+<!-- component -->
+      <div class="bg-white p-4 rounded-md">
+        <div>
+          <h2 class="mb-4 text-xl font-bold text-gray-700">Transaksi</h2>
+          <div>
             <div>
-                <i class="fa fa-map-marker"></i>
-                <p><span>Indonesia</span> Bandar Lampung, Raja Basa</p>
+              <div class="flex justify-between bg-gradient-to-tr from-pink-500 to-pink-600 rounded-md py-2 px-4 text-white font-bold text-md">
+                <div>
+                  <span>Id</span>
+                </div>
+                <div>
+                  <span>User Id</span>
+                </div>
+                <div>
+                  <span>Total</span>
+                </div>
+                <div>
+                  <span>Tanggal</span>
+                </div>
+                <div>
+                  <span>Detail</span>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between border-t text-sm font-normal mt-4 space-x-4">
+                  <div class="px-2 flex">
+                    <span>A123</span>
+                  </div>
+                  <div>
+                    <span>iqbal widiansyah</span>
+                  </div>
+                  <div class="px-2">
+                    <span>Rp 151.500</span>
+                  </div>
+                  <div class="px-2">
+                    <span>28/10/2023</span>
+                  </div>
+                  <div class="px-2">
+                    <a href="<?= base_url('/tampil'); ?>">
+                      <button
+                          class="middle none center rounded-lg bg-pink-500 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                          data-ripple-light="true">
+                          Detail
+                        </button>
+                    </a>
+                  </div>
+                </div>
+      
+                <div class="flex justify-between border-t text-sm font-normal mt-4 space-x-4">
+                  <div class="px-2 flex">
+                    <span>B123</span>
+                  </div>
+                  <div>
+                    <span>Restu Halimmmm</span>
+                  </div>
+                  <div class="px-2">
+                    <span>Rp 151.500</span>
+                  </div>
+                  <div class="px-2">
+                    <span>29/10/2023</span>
+                  </div>
+                  <div class="px-2">
+                    <a href="<?= base_url('/tampil'); ?>">
+                      <button
+                          class="middle none center rounded-lg bg-pink-500 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                          data-ripple-light="true">
+                          Detail
+                        </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div>
-                <i class="fa fa-phone"></i>
-                <p>+62 856-6468-4711</p>
-            </div>
-            <div>
-                <i class="fa fa-envelope"></i>
-                <p><a href="#">restiqa23@gmail.com</a></p>
-            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="footer-right">
-            <p class="footer-about">
-                <span>About</span>
-                Selamat datang di Restiqa Skincare! Kami adalah tujuan terpercaya untuk produk perawatan kulit berkualitas. Temukan produk yang cocok untuk kulit Anda dan mulailah perjalanan menuju kulit yang sehat dan indah bersama kami.
 
-            <div class="footer-media">
-                <a href="#"><i class="fa fa-youtube"></i></a>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
-            </div>
-        </div>
-
-    </footer>
-</body>
-</html>
+<?= $this->endSection() ?>
