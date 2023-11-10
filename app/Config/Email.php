@@ -6,14 +6,14 @@ use CodeIgniter\Config\BaseConfig;
 
 class Email extends BaseConfig
 {
-    public string $fromEmail  = '';
+    public string $fromEmail  = 'azzahraadellia52@gmail.com';
     public string $fromName   = '';
     public string $recipients = '';
 
     /**
      * The "user agent"
      */
-    public string $userAgent = 'CodeIgniter';
+    public string $userAgent = 'UAPWebLanjut';
 
     /**
      * The mail sending protocol: mail, sendmail, smtp
