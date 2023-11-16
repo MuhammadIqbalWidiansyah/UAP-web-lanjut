@@ -3,7 +3,7 @@
 
     <div class="container mx-2 p-10 ">
       <h1 class="text-3xl lg:text-4xl tracking-tight font-semibold leading-8 lg:leading-9 text-gray-800 dark:text-black dark:text-black">Produk</h1>
-    </div=> 
+    </div> 
 <br>
 <div class="mp-4 ">
 <div class="row row-cols-2 g-3">
