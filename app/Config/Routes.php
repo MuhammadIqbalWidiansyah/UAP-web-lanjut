@@ -18,6 +18,7 @@ $routes->get('/login_admin', [LoginController::class, 'admin']);
 $routes->get('/login_karyawan', [LoginController::class, 'karyawan']);
 $routes->get('/register_cust', [LoginController::class, 'register_cust']);
 $routes->get('/list_barang', [BarangController::class, 'barang']);
+$routes->get('/riwayat_transaksi/(:num)', [TransaksiController::class, 'transaksi']);
 
 
 // Myth:Auth routes file.
