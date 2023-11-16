@@ -20,9 +20,6 @@ class TabelTransaksi extends Migration
                 'constraint' => '11',
                 'unsigned' => true,
             ],
-            'tanggal_transaksi' => [
-                'type' => 'datetime'
-            ],
             'total_harga' => [
                 'type' => 'double',
                 'constraint' => '9,0',
