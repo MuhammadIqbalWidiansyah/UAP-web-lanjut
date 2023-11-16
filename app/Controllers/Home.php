@@ -16,7 +16,7 @@ class Home extends BaseController
                 return view('list_barang');
             }
         } else {
-            return view('landing_page');
+            // return view('landing_page');
         }
     }
 
@@ -27,5 +27,21 @@ class Home extends BaseController
 
     public function tampil() {
         return view('detail');
+    }
+
+    public function dash_admin() {
+        return view('dashboard_admin');
+    }
+
+    public function dash_karyawan() {
+        return view('dashboard_karyawan');
+    }
+
+    public function dash_cust() {
+        return view('dashboard_cust');
+    }
+
+    public function produk() {
+        return view('produk');
     }
 }

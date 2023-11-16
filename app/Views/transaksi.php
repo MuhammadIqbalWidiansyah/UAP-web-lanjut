@@ -2,6 +2,7 @@
 <?= $this->section('content') ?>
 
 <!-- component -->
+
       <div class="bg-white p-4 rounded-md">
         <div>
           <h2 class="mb-4 text-xl font-bold text-gray-700">Transaksi</h2>
