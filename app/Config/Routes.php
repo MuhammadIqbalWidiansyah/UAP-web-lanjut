@@ -14,6 +14,10 @@ use Config\Auth as AuthConfig;
 $routes->get('/', 'Home::index');
 $routes->get('/list', 'Home::list');
 $routes->get('/tampil', 'Home::tampil');
+$routes->get('/dash_admin', 'Home::dash_admin');
+$routes->get('/dash_karyawan', 'Home::dash_karyawan');
+$routes->get('/dash_cust', 'Home::dash_cust');
+$routes->get('/produk', 'Home::produk');
 $routes->get('/login_cust', [LoginController::class, 'customer']);
 $routes->get('/login_admin', [LoginController::class, 'admin']);
 $routes->get('/login_karyawan', [LoginController::class, 'karyawan']);
@@ -22,7 +26,7 @@ $routes->get('/list_barang', [BarangController::class, 'barang']);
 $routes->get('/profile_admin', [ProfileController::class, 'admin']);
 $routes->get('/profile_karyawan', [ProfileController::class, 'karyawan']);
 $routes->get('/profile_cust', [ProfileController::class, 'customer']);
-
+$routes->get('/riwayat_transaksi/(:num)', [TransaksiController::class, 'transaksi']);
 
 
 // Myth:Auth routes file.
