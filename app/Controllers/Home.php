@@ -14,7 +14,7 @@ class Home extends BaseController
                 return dd('karyawan');
             } else if (in_groups('User')) {
                 return view('list_barang');
-            }
+            }   
         } else {
             // return view('landing_page');
         }

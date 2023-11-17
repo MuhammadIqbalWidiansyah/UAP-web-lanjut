@@ -4,6 +4,7 @@ use CodeIgniter\Router\RouteCollection;
 use App\Controllers\TransaksiController;
 use App\Controllers\LoginController;
 use App\Controllers\BarangController;
+use App\Controllers\ProfileController;
 use Config\Auth as AuthConfig;
 
 
@@ -22,6 +23,9 @@ $routes->get('/login_admin', [LoginController::class, 'admin']);
 $routes->get('/login_karyawan', [LoginController::class, 'karyawan']);
 $routes->get('/register_cust', [LoginController::class, 'register_cust']);
 $routes->get('/list_barang', [BarangController::class, 'barang']);
+$routes->get('/profile_admin', [ProfileController::class, 'admin']);
+$routes->get('/profile_karyawan', [ProfileController::class, 'karyawan']);
+$routes->get('/profile_cust', [ProfileController::class, 'customer']);
 $routes->get('/riwayat_transaksi/(:num)', [TransaksiController::class, 'transaksi']);
 
 
