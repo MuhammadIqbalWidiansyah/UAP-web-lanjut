@@ -17,6 +17,7 @@ $routes->get('/dash_admin', 'Home::dash_admin');
 $routes->get('/dash_karyawan', 'Home::dash_karyawan');
 $routes->get('/dash_cust', 'Home::dash_cust');
 $routes->get('/produk', 'Home::produk');
+$routes->get('/keranjang', 'Home::keranjang');
 $routes->get('/login_cust', [LoginController::class, 'customer']);
 $routes->get('/login_admin', [LoginController::class, 'admin']);
 $routes->get('/login_karyawan', [LoginController::class, 'karyawan']);

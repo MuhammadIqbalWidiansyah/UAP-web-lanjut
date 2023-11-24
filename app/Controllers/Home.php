@@ -44,4 +44,8 @@ class Home extends BaseController
     public function produk() {
         return view('produk');
     }
+
+    public function keranjang() {
+        return view('cart');
+    }
 }
