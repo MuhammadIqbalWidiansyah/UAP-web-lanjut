@@ -38,6 +38,11 @@ class TabelProduk extends Migration
                 'constraint' => '11',
                 'unsigned' => true
             ],
+            'foto' => [
+                'type' => 'varchar',
+                'constraint' => 255,
+                'null' => true
+            ],
             'created_at' => [
                 'type' => 'datetime',
                 'null' => true
