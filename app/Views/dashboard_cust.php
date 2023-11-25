@@ -38,7 +38,7 @@
                         </a>
                      </li>
                      <li>
-                        <a href="#" class="text-base text-gray-900 font-normal rounded-lg hover:bg-gray-100 flex items-center p-2 group ">
+                        <a href="#" class="text-base text-gray-900 font-normal rounded-lg hover:bg-gray-100 flex items-center p-2 group">
                            <svg class="w-6 h-6 text-gray-500 flex-shrink-0 group-hover:text-gray-900 transition duration-75" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                               <path fill-rule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd"></path>
                            </svg>
@@ -47,7 +47,7 @@
                      </li>
                      <li>
                         <a href="#" class="text-base text-gray-900 font-normal rounded-lg hover:bg-gray-100 flex items-center p-2 group ">
-                          <svg class="w-6 h-6" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <svg class="w-6 h-6 text-gray-500 flex-shrink-0 group-hover:text-gray-900 transition duration-75" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path>
                           </svg>
                            <span class="ml-3 flex-1 whitespace-nowrap">Log Out</span>
@@ -81,421 +81,65 @@
       <h1 class="text-3xl lg:text-4xl tracking-tight font-semibold leading-8 lg:leading-9 text-gray-800 dark:text-black dark:text-black">Produk</h1>
     </div> 
 <br>
+<div class="container">
 <div class="mp-4 ">
 <div class="row row-cols-2 g-3">
-<div class="col">
-  <div class="card flex flex-col justify-center p-2 bg-white rounded-lg shadow-2xl">
-      <img src="<?php echo base_url('images/daycream.png'); ?>" class="card-img-top" alt="daycream" />
-      <div class="card-body">
-        <h5 class="card-title">Day Cream</h5>
-        <p class="card-text">
-        Rp 89.500 (Tersisa 150 produk)
-        </p>
-      </div>
-      <div class="flex items-center mt-2.5 mb-5">
-					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-						</path>
-					</svg>
-					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-						</path>
-					</svg>
-					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-						</path>
-					</svg>
-					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-						</path>
-					</svg>
-					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-						</path>
-					</svg>
-					<span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
-				</div>
-				<div class="flex items-center justify-between">
-					<span class="text-3xl font-bold text-gray-900 dark:text-white">$599</span>
-					<a href="#"
-						class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
-						to cart</a>
-				</div>
-  </div> 
-</div>
-  
-  <div class="col">
-  <div class="card flex flex-col justify-center p-2 bg-white rounded-lg shadow-2xl">
-      <img src="<?php echo base_url('images//nightcream.png'); ?>" class="card-img-top" alt="/nightcream" />
-      <div class="card-body">
-        <h5 class="card-title">Night Cream</h5>
-        <p class="card-text">
-        Rp 151.500 (Tersisa 250 Produk)
-        </p>
-      </div>
-      <div class="flex items-center mt-2.5 mb-5">
-					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-						</path>
-					</svg>
-					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-						</path>
-					</svg>
-					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-						</path>
-					</svg>
-					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-						</path>
-					</svg>
-					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-						</path>
-					</svg>
-					<span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
-				</div>
-				<div class="flex items-center justify-between">
-					<span class="text-3xl font-bold text-gray-900 dark:text-white">$599</span>
-					<a href="#"
-						class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
-						to cart</a>
-				</div>
-    </div>
-  </div>
-
-  <div class="col">
-  <div class="card flex flex-col justify-center p-2 bg-white rounded-lg shadow-2xl">
-      <img src="<?php echo base_url('images/moistureizer.png'); ?>" class="card-img-top" alt="moistureizer" />
-      <div class="card-body">
-        <h5 class="card-title">Moistureizer</h5>
-        <p class="card-text">
-        Rp 40.000 (Tersisa 210 Produk)
-        </p>
-      </div>
-      <div class="flex items-center mt-2.5 mb-5">
-					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-						</path>
-					</svg>
-					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-						</path>
-					</svg>
-					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-						</path>
-					</svg>
-					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-						</path>
-					</svg>
-					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-						</path>
-					</svg>
-					<span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
-				</div>
-				<div class="flex items-center justify-between">
-					<span class="text-3xl font-bold text-gray-900 dark:text-white">$599</span>
-					<a href="#"
-						class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
-						to cart</a>
-				</div>
-    </div>
-  </div>
-
-  <div class="col">
-  <div class="card flex flex-col justify-center p-2 bg-white rounded-lg shadow-2xl">
-      <img src="<?php echo base_url('images/serum.png'); ?>" class="card-img-top"alt="serum" />
-      <div class="card-body">
-        <h5 class="card-title">Serum</h5>
-        <p class="card-text">
-        Rp 175.000 (Tersisa 136 Produk)
-        </p>
-      </div>
-      <div class="flex items-center mt-2.5 mb-5">
-					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-						</path>
-					</svg>
-					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-						</path>
-					</svg>
-					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-						</path>
-					</svg>
-					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-						</path>
-					</svg>
-					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-						</path>
-					</svg>
-					<span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
-				</div>
-				<div class="flex items-center justify-between">
-					<span class="text-3xl font-bold text-gray-900 dark:text-white">$599</span>
-					<a href="#"
-						class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
-						to cart</a>
-				</div>
-    </div>
-  </div>  
+	<?php foreach($barang as $produk) { ?>
+		<div class="col">
+		<div class="card h-100 flex flex-col justify-center p-2 bg-white rounded-lg shadow-2xl">
+			<img src="<?= $produk['foto'] ?>" class="card-img-top" alt="daycream" />
+			<div class="card-body">
+				<h5 class="card-title"><?= $produk['nama_produk'] ?></h5>
+				<p class="card-text">
+				Rp <?= $produk['harga'] ?> <br>(Tersisa <?= $produk['stok'] ?> produk)
+				</p>
+			</div>
+			<div class="flex items-center mt-2.5 mb-5">
+							<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+								</path>
+							</svg>
+							<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+								</path>
+							</svg>
+							<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+								</path>
+							</svg>
+							<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+								</path>
+							</svg>
+							<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+								</path>
+							</svg>
+							<span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
+						</div>
+						<div class="flex items-center justify-between">
+							<span class="text-3xl font-bold text-gray-900 dark:text-white">$599</span>
+							<a href="#"
+								class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+								to cart</a>
+						</div>
+		</div> 
+		</div>
+	<?php } ?>
+	</div>
+	</div>  
 </div>
 
-<br>
-<div class="row row-cols-2 g-3">
-<div class="col">
-  <div class="card flex flex-col justify-center p-2 bg-white rounded-lg shadow-2xl">
-      <img src="<?php echo base_url('images/toner.png'); ?>" class="card-img-top" alt="toner" />
-      <div class="card-body">
-        <h5 class="card-title">Toner</h5>
-        <p class="card-text">
-        Rp 63.500 (Tersisa 320 Produk)
-        </p>
-      </div>
-      <div class="flex items-center mt-2.5 mb-5">
-					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-						</path>
-					</svg>
-					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-						</path>
-					</svg>
-					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-						</path>
-					</svg>
-					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-						</path>
-					</svg>
-					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-						</path>
-					</svg>
-					<span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
-				</div>
-				<div class="flex items-center justify-between">
-					<span class="text-3xl font-bold text-gray-900 dark:text-white">$599</span>
-					<a href="#"
-						class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
-						to cart</a>
-				</div>
-  </div> 
-</div>
-  
-  <div class="col">
-  <div class="card flex flex-col justify-center p-2 bg-white rounded-lg shadow-2xl">
-      <img src="<?php echo base_url('images/booster.png'); ?>" class="card-img-top" alt="booster" />
-      <div class="card-body">
-        <h5 class="card-title">Booster</h5>
-        <p class="card-text">
-        Rp 249.000 (Tersisa 210 Produk)
-        </p>
-      </div>
-      <div class="flex items-center mt-2.5 mb-5">
-					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-						</path>
-					</svg>
-					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-						</path>
-					</svg>
-					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-						</path>
-					</svg>
-					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-						</path>
-					</svg>
-					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-						</path>
-					</svg>
-					<span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
-				</div>
-				<div class="flex items-center justify-between">
-					<span class="text-3xl font-bold text-gray-900 dark:text-white">$599</span>
-					<a href="#"
-						class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
-						to cart</a>
-				</div>
-    </div>
-  </div>
-
-  <div class="col">
-  <div class="card flex flex-col justify-center p-2 bg-white rounded-lg shadow-2xl">
-      <img src="<?php echo base_url('images/sunscreen.png'); ?>" class="card-img-top" alt="sunscreen" />
-      <div class="card-body">
-        <h5 class="card-title">Sunscreen</h5>
-        <p class="card-text">
-        Rp 79.000 (Tersisa 160 Produk)
-        </p>
-      </div>
-      <div class="flex items-center mt-2.5 mb-5">
-					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-						</path>
-					</svg>
-					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-						</path>
-					</svg>
-					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-						</path>
-					</svg>
-					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-						</path>
-					</svg>
-					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-						</path>
-					</svg>
-					<span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
-				</div>
-				<div class="flex items-center justify-between">
-					<span class="text-3xl font-bold text-gray-900 dark:text-white">$599</span>
-					<a href="#"
-						class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
-						to cart</a>
-				</div>
-    </div>
-  </div>
-
-  <div class="col">
-  <div class="card flex flex-col justify-center p-2 bg-white rounded-lg shadow-2xl">
-      <img src="<?php echo base_url('images/facialwash.png'); ?>" class="card-img-top" alt="facialwash" />
-      <div class="card-body">
-        <h5 class="card-title">Facial Wash</h5>
-        <p class="card-text">
-        Rp 65.000 (Tersisa 70 Produk)
-        </p>
-      </div>
-      <div class="flex items-center mt-2.5 mb-5">
-					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-						</path>
-					</svg>
-					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-						</path>
-					</svg>
-					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-						</path>
-					</svg>
-					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-						</path>
-					</svg>
-					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-						</path>
-					</svg>
-					<span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
-				</div>
-				<div class="flex items-center justify-between">
-					<span class="text-3xl font-bold text-gray-900 dark:text-white">$599</span>
-					<a href="#"
-						class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
-						to cart</a>
-				</div>
-    </div>
-  </div>
-
-</div>  
-</div>
          </main>
       </div>
    </div>
