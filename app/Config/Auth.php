@@ -15,7 +15,7 @@ class Auth extends \Myth\Auth\Config\Auth
      *
      * @var string
      */
-    public $defaultUserGroup = 'User';
+    public $defaultUserGroup;
 
     /**
      * --------------------------------------------------------------------
@@ -73,8 +73,8 @@ class Auth extends \Myth\Auth\Config\Auth
      * @var array
      */
     public $views = [
-        'login'           => '\App\Views\Auth\login_cust',
-        'register'        => '\App\Views\Auth\register_cust',
+        'login'           => 'App\Views\Auth\login',
+        'register'        => 'App\Views\Auth\register',
         'forgot'          => 'App\Views\Auth\forgot',
         'reset'           => 'App\Views\Auth\reset',
         'emailForgot'     => 'App\Views\Auth\emails\forgot',
@@ -185,8 +185,7 @@ class Auth extends \Myth\Auth\Config\Auth
      *
      * @var string|null Name of the ActivatorInterface class
      */
-    // public $requireActivation = 'Myth\Auth\Authentication\Activators\EmailActivator';
-    public $requireActivation = null;
+    public $requireActivation = 'Myth\Auth\Authentication\Activators\EmailActivator';
 
     /**
      * --------------------------------------------------------------------
@@ -198,8 +197,7 @@ class Auth extends \Myth\Auth\Config\Auth
      *
      * @var string|null Name of the ResetterInterface class
      */
-    // public $activeResetter = 'Myth\Auth\Authentication\Resetters\EmailResetter';
-    public $activeResetter = null;
+    public $activeResetter = 'Myth\Auth\Authentication\Resetters\EmailResetter';
 
     /**
      * --------------------------------------------------------------------
@@ -315,7 +313,7 @@ class Auth extends \Myth\Auth\Config\Auth
      *
      * @var int
      */
-    public $minimumPasswordLength = 5;
+    public $minimumPasswordLength = 8;
 
     /**
      * --------------------------------------------------------------------
@@ -331,9 +329,9 @@ class Auth extends \Myth\Auth\Config\Auth
      * @var string[]
      */
     public $passwordValidators = [
-        // 'Myth\Auth\Authentication\Passwords\CompositionValidator',
+        'Myth\Auth\Authentication\Passwords\CompositionValidator',
         'Myth\Auth\Authentication\Passwords\NothingPersonalValidator',
-        // 'Myth\Auth\Authentication\Passwords\DictionaryValidator',
+        'Myth\Auth\Authentication\Passwords\DictionaryValidator',
         // 'Myth\Auth\Authentication\Passwords\PwnedValidator',
     ];
 

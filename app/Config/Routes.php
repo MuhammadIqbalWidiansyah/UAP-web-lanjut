@@ -50,6 +50,8 @@ $routes->group('', ['namespace' => 'App\Controllers'], static function ($routes)
     // Registration
     $routes->get($reservedRoutes['register'], 'AuthController::register', ['as' => $reservedRoutes['register']]);
     $routes->post($reservedRoutes['register'], 'AuthController::attemptRegister');
+    $routes->get($reservedRoutes['register_karyawan'], 'AuthController::register_karyawan', ['as' => $reservedRoutes['register_karyawan']]);
+    $routes->post($reservedRoutes['register_karyawan'], 'AuthController::attemptRegister_karyawan');
 
     // Activation
     $routes->get($reservedRoutes['activate-account'], 'AuthController::activateAccount', ['as' => $reservedRoutes['activate-account']]);
