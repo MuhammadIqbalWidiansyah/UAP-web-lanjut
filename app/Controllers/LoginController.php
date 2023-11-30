@@ -4,10 +4,10 @@ namespace App\Controllers;
 
 class LoginController extends BaseController
 {
-    // public function customer()
-    // {
-    //     return view('login_cust');
-    // }
+    public function customer()
+    {
+        return view('login_cust');
+    }
     
     public function admin()
     {
