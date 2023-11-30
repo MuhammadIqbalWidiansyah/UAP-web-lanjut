@@ -26,9 +26,7 @@
             <div class="mb-3">
             <label class="mb-2 block text-xs font-semibold"><?=lang('Auth.email')?></label>
             <!-- <input type="email" placeholder="<?=lang('Auth.email')?>" class="block w-full rounded-md border border-gray-300 focus:border-purple-700 focus:outline-none focus:ring-1 focus:ring-purple-700 py-1 px-1.5 text-gray-500  <?php if (session('errors.email')) : ?>is-invalid<?php endif ?>" name="email" value="<?= old('email') ?>"/> -->
-              <input type="email" class="form-control <?php if (session('errors.email')) : ?>is-invalid<?php endif ?>"
-                                   name="email" aria-describedby="emailHelp" placeholder="<?=lang('Auth.email')?>" value="<?= old('email') ?>">
-              <small id="emailHelp" class="form-text text-muted"><?=lang('Auth.weNeverShare')?></small>
+              <input type="email" class="form-control <?php if (session('errors.email')) : ?>is-invalid<?php endif ?>" name="email" aria-describedby="emailHelp" placeholder="<?=lang('Auth.email')?>" value="<?= old('email') ?>">
             </div>
 
           <div class="mb-3">
@@ -47,7 +45,7 @@
 
           <div class="mb-3">
             <!-- <button type="submit" class="mb-1.5 block w-full text-center text-white bg-teal-400 hover:bg-purple-900 px-2 py-1.5 rounded-md"><?=lang('Auth.register')?></button> -->
-            <button type="submit" class="btn btn-primary btn-block"><?=lang('Auth.register')?></button>
+            <button type="submit" class="mb-1.5 block w-full text-center text-white bg-teal-500 hover:bg-purple-900 px-2 py-1.5 rounded-md"><?=lang('Auth.register')?></button>
 
           </div>
         </form>

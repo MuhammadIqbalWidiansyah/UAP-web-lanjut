@@ -16,7 +16,7 @@ class Home extends BaseController
                 return view('list_barang');
             }   
         } else {
-            // return view('landing_page');
+            return view('landing_page');
         }
     }
 
