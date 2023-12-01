@@ -8,12 +8,12 @@ class Home extends BaseController
     public function index()
     {
         if (logged_in()) {
-            if (in_groups('Admin')) {
+            if (in_groups('admin')) {
                 return dd('admin');
-            } else if (in_groups('Karyawan')) {
+            } else if (in_groups('karyawan')) {
                 return dd('karyawan');
-            } else if (in_groups('User')) {
-                return view('list_barang');
+            } else if (in_groups('customer')) {
+                return dd('customer');
             }   
         } else {
             return view('landing_page');
@@ -48,4 +48,6 @@ class Home extends BaseController
     public function keranjang() {
         return view('cart');
     }
+
+
 }
