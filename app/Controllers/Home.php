@@ -18,7 +18,7 @@ class Home extends BaseController
         if (logged_in()) {
             if (in_groups('admin')) {
                 return dd('admin');
-            } else if (in_groups('karyawan')) {
+=======
                 return view('dashboard_karyawan');
             } else if (in_groups('customer')) {
                 $data = [
@@ -60,4 +60,6 @@ class Home extends BaseController
     public function keranjang() {
         return view('cart');
     }
+
+
 }
