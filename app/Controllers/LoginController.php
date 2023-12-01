@@ -24,7 +24,12 @@ class LoginController extends BaseController
         return view('Auth/register');
     }
 
-
+    public function register_cust(){
+        return view('Auth/register_cust');
+    }
+    public function register_karyawan(){
+        return view('Auth/register_karyawan');
+    }
 
     
 }

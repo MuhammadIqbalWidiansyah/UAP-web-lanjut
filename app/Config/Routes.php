@@ -26,14 +26,15 @@ $routes->get('/produk', 'Home::produk');
 $routes->get('/list_barang', [BarangController::class, 'barang']);
 $routes->get('/keranjang', 'Home::keranjang');
 $routes->get('/login_cust', [LoginController::class, 'customer']);
-$routes->get('/login_admin', [LoginController::class, 'admin']);
-$routes->get('/login_karyawan', [LoginController::class, 'karyawan']);
+// $routes->get('/login_admin', [LoginController::class, 'admin']);
+// $routes->get('/login_karyawan', [LoginController::class, 'karyawan']);
 $routes->get('/register_cust', [LoginController::class, 'register_cust']);
 $routes->get('/list_barang', [ProdukController::class, 'list_barang']);
 $routes->get('/profile_admin', [ProfileController::class, 'admin']);
 $routes->get('/profile_karyawan', [ProfileController::class, 'karyawan']);
 $routes->get('/profile_cust', [ProfileController::class, 'customer']);
 $routes->get('/riwayat_transaksi/(:num)', [TransaksiController::class, 'transaksi']);
+
 
 
 // Myth:Auth routes file.
@@ -47,11 +48,11 @@ $routes->group('', ['namespace' => 'App\Controllers'], static function ($routes)
     $routes->post($reservedRoutes['login'], 'AuthController::attemptLogin');
     $routes->get($reservedRoutes['logout'], 'AuthController::logout');
 
-    // Registration
+    // Registration     
     $routes->get($reservedRoutes['register'], 'AuthController::register', ['as' => $reservedRoutes['register']]);
     $routes->post($reservedRoutes['register'], 'AuthController::attemptRegister');
-    $routes->get($reservedRoutes['register_karyawan'], 'AuthController::register_karyawan', ['as' => $reservedRoutes['register_karyawan']]);
-    $routes->post($reservedRoutes['register_karyawan'], 'AuthController::attemptRegister_karyawan');
+    $routes->get('register_karyawan', 'LoginController::register_karyawan');
+   // $routes->post($reservedRoutes['register_karyawan'], 'AuthController::attemptRegister_karyawan');
 
     // Activation
     $routes->get($reservedRoutes['activate-account'], 'AuthController::activateAccount', ['as' => $reservedRoutes['activate-account']]);

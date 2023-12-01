@@ -8,14 +8,14 @@
     <div class="flex flex-wrap content-center justify-center rounded-l-md bg-white" style="width: 24rem; height: 32rem;">
       <div class="w-72">
         <!-- Heading -->
-        <h1 class="text-xl font-semibold"><?=lang('Auth.register')?></h1>
+        <h1 class="text-xl font-semibold"><?=lang('Register Karyawan')?></h1>
 
         
 
         <!-- Form -->
-        <form action="<?= url_to('register_karyawan') ?>" method="post" class="user">
+        <form action="<?= url_to('register') ?>" method="post" class="user">
             <?= csrf_field() ?>
-
+            <input type="hidden" name="role" value="karyawan">
             <div class="mb-3">
             <label class="mb-2 block text-xs font-semibold"><?=lang('Auth.username')?></label>
             <!-- <input type="text" placeholder="<?=lang('Auth.username')?>" class="block w-full rounded-md border border-gray-300 focus:border-purple-700 focus:outline-none focus:ring-1 focus:ring-purple-700 py-1 px-1.5 text-gray-500 <?php if (session('errors.username')) : ?>is-invalid<?php endif ?>" name="username" value="<?= old('username') ?>"/> -->

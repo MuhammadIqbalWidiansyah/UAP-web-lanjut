@@ -82,12 +82,12 @@ class AuthController extends Controller
 
         // Determine credential type
         $type = filter_var($login, FILTER_VALIDATE_EMAIL) ? 'email' : 'username';
-
+        //dd($password);
         // Try to log them in...
         if (! $this->auth->attempt([$type => $login, 'password' => $password], $remember)) {
             return redirect()->back()->withInput()->with('error', $this->auth->error() ?? lang('Auth.badAttempt'));
         }
-
+        //dd($this->auth->user());
         // Is the user being forced to reset their password?
         if ($this->auth->user()->force_pass_reset === true) {
             return redirect()->to(route_to('reset-password') . '?token=' . $this->auth->user()->reset_hash)->withCookies();
@@ -95,7 +95,7 @@ class AuthController extends Controller
 
         $redirectURL = session('redirect_url') ?? site_url('/');
         unset($_SESSION['redirect_url']);
-
+        
         return redirect()->to($redirectURL)->withCookies()->with('message', lang('Auth.loginSuccess'));
     }
 
@@ -142,13 +142,13 @@ class AuthController extends Controller
         if (! $this->config->allowRegistration) {
             return redirect()->back()->withInput()->with('error', lang('Auth.registerDisabled'));
         }
-
+      //  dd("yes");
         $users = model(UserModel::class);
 
         // Validate basics first since some password rules rely on these fields
         $rules = config('Validation')->registrationRules ?? [
-            'username' => 'required|alpha_numeric_space|min_length[3]|max_length[30]|is_unique[users.username]',
-            'email'    => 'required|valid_email|is_unique[users.email]',
+            'username' => 'required',
+            'email'    => 'required',
         ];
 
         if (! $this->validate($rules)) {
@@ -157,7 +157,7 @@ class AuthController extends Controller
 
         // Validate passwords since they can only be validated properly here
         $rules = [
-            'password'     => 'required|strong_password',
+            'password'     => 'required',
             'pass_confirm' => 'required|matches[password]',
         ];
 
@@ -168,19 +168,20 @@ class AuthController extends Controller
         // Save the user
         $allowedPostFields = array_merge(['password'], $this->config->validFields, $this->config->personalFields);
         $user              = new User($this->request->getPost($allowedPostFields));
-
+        $user->activate();
         $this->config->requireActivation === null ? $user->activate() : $user->generateActivateHash();
-
+        
         // Ensure default group gets assigned if set
-        if (! empty($this->config->defaultUserGroup)) {
-            $users = $users->withGroup($this->config->defaultUserGroup);
-        }
+       
+            $users = $users->withGroup($this->request->getVar('role'));
+        
+        
 
         if (! $users->save($user)) {
             return redirect()->back()->withInput()->with('errors', $users->errors());
         }
-
-        if ($this->config->requireActivation !== null) {
+       
+        if (false) {
             $activator = service('activator');
             $sent      = $activator->send($user);
 
@@ -193,7 +194,7 @@ class AuthController extends Controller
         }
 
         // Success!
-        return redirect()->route('login')->with('message', lang('Auth.registerSuccess'));
+        return redirect()->route('login_cust')->with('message', lang('Auth.registerSuccess'));
     }
 
     //--------------------------------------------------------------------
