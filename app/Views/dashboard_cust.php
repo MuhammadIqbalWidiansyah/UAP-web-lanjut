@@ -38,7 +38,7 @@
                         </a>
                      </li>
                      <li>
-                        <a href="#" class="text-base text-gray-900 font-normal rounded-lg hover:bg-gray-100 flex items-center p-2 group">
+                        <a href="<?= base_url('/keranjang') ?>" class="text-base text-gray-900 font-normal rounded-lg hover:bg-gray-100 flex items-center p-2 group">
                            <svg class="w-6 h-6 text-gray-500 flex-shrink-0 group-hover:text-gray-900 transition duration-75" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                               <path fill-rule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd"></path>
                            </svg>
@@ -82,6 +82,9 @@
     </div> 
 <br>
 <div class="container">
+<a href="<?= base_url('/dash_cust/create_produk') ?>">
+   <button>Tambah Pengguna</button>
+</a>
 <div class="mp-4 ">
 <div class="row row-cols-2 g-3">
 	<?php foreach($barang as $produk) { ?>
@@ -133,7 +136,17 @@
 								class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
 								to cart</a>
 						</div>
-		</div> 
+                  <a href="<?= base_url('dash_cust/' . $produk['produk_id'] . '/edit_produk') ?>">
+                     <button class="btn btn-warning"><i class="fa fa-pen" style="color: white;"></i></button>
+                  </a>
+                  <form action="<?= base_url('dash_cust/' . $produk['produk_id']) ?>" method="post" style="display: inline-block">
+                     <input type="hidden" name="_method" value="delete">
+                     <?= csrf_field() ?>
+                     <a>
+                        <button type="submit" class="btn btn-danger" onclick="return confirmDelete();"><i class="fa fa-trash"></i></button>
+                     </a>
+                  </form>
+		</div>
 		</div>
 	<?php } ?>
 	</div>
@@ -143,5 +156,18 @@
          </main>
       </div>
    </div>
+
+   <script>
+      function confirmDelete() {
+         var konfirmasi = confirm("Apakah Anda yakin ingin menghapus data ini?");
+         if (konfirmasi) {
+               alert("Data telah dihapus.");
+               return true;
+         } else {
+               alert("Penghapusan dibatalkan.");
+               return false;
+         }
+      }
+   </script>
 
  <?= $this->endSection() ?>

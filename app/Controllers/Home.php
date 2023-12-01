@@ -2,18 +2,30 @@
 
 namespace App\Controllers;
 use App\Controllers\BaseController;
+use App\Models\ProdukModel;
 
 class Home extends BaseController
 {
+    
+    public $produkModel;
+
+    public function __construct() {
+        $this->produkModel = new ProdukModel();
+    }
+
     public function index()
     {
         if (logged_in()) {
             if (in_groups('admin')) {
                 return dd('admin');
-            } else if (in_groups('karyawan')) {
-                return dd('karyawan');
+=======
+                return view('dashboard_karyawan');
             } else if (in_groups('customer')) {
-                return dd('customer');
+                $data = [
+                    'title' => 'dashboard',
+                    'barang' => $this->produkModel->getProduk()
+                ];
+                return view('dashboard_cust', $data);
             }   
         } else {
             return view('landing_page');

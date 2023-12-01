@@ -16,7 +16,7 @@ class LoginFilter extends BaseFilter implements FilterInterface
      *
      * @return RedirectResponse|void
      */
-    public function before(RequestInterface $request, $arguments = NULL)
+    public function before(RequestInterface $request, $arguments = null)
     {
         // Make sure this isn't already a Myth\Auth routes.
         foreach ($this->reservedRoutes as $reservedRoute) {
@@ -38,7 +38,7 @@ class LoginFilter extends BaseFilter implements FilterInterface
      *
      * @return void
      */
-    public function after(RequestInterface $request, ResponseInterface $response, $arguments = NULL)
+    public function after(RequestInterface $request, ResponseInterface $response, $arguments = null)
     {
     }
 }
