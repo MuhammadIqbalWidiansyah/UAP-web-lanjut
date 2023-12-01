@@ -24,6 +24,7 @@ $routes->get('/dash_cust/(:any)/edit_produk', [ProdukController::class, 'editPro
 $routes->put('/dash_cust/(:any)', [ProdukController::class, 'updateProduk']);
 $routes->delete('/dash_cust/(:any)', [ProdukController::class, 'destroyProduk']);
 $routes->get('/produk', 'Home::produk');
+$routes->get('/keranjang', 'Home::keranjang');
 $routes->get('/login_cust', [LoginController::class, 'customer']);
 $routes->get('/login_admin', [LoginController::class, 'admin']);
 $routes->get('/login_karyawan', [LoginController::class, 'karyawan']);
