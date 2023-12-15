@@ -4,6 +4,7 @@ use CodeIgniter\Router\RouteCollection;
 use App\Controllers\TransaksiController;
 use App\Controllers\LoginController;
 use App\Controllers\BarangController;
+use App\Controllers\KaryawanController;
 use App\Controllers\ProdukController;
 use App\Controllers\ProfileController;
 use App\Controllers\Home;
@@ -41,6 +42,13 @@ $routes->get('/profile_admin', [ProfileController::class, 'admin']);
 $routes->get('/profile_karyawan', [ProfileController::class, 'karyawan']);
 $routes->get('/profile_cust', [ProfileController::class, 'customer']);
 $routes->get('/riwayat_transaksi/(:num)', [TransaksiController::class, 'transaksi']);
+
+$routes->get('/list_karyawan', [KaryawanController::class,'index']);
+$routes->get('/karyawan/create', [KaryawanController::class, 'create']);
+$routes->post('/karyawan/store', [KaryawanController::class,'store']);
+$routes->get('/karyawan/edit/(:num)', [KaryawanController::class,'edit/$1']);
+$routes->post('/karyawan/update/(:num)', [KaryawanController::class, 'update/$1']);
+$routes->get('/karyawan/delete/(:num)', [KaryawanController::class, 'delete/$1']);
 
 
 
