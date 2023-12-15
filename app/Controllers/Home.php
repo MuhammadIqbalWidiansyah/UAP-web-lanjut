@@ -16,8 +16,9 @@ class Home extends BaseController
     public function index()
     {
         if (logged_in()) {
+
             if (in_groups('admin')) {
-                return dd('admin');
+                return view('dashboard_admin');
             } else if (in_groups('karyawan')) {
                 return view('dashboard_karyawan');
             } else if (in_groups('customer')) {

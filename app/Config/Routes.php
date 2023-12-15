@@ -6,6 +6,8 @@ use App\Controllers\LoginController;
 use App\Controllers\BarangController;
 use App\Controllers\ProdukController;
 use App\Controllers\ProfileController;
+use App\Controllers\Home;
+
 use Config\Auth as AuthConfig;
 
 
@@ -15,9 +17,9 @@ use Config\Auth as AuthConfig;
 $routes->get('/', 'Home::index');
 $routes->get('/list', 'Home::list');
 $routes->get('/tampil', 'Home::tampil');
-$routes->get('/dash_admin', 'Home::dash_admin');
-$routes->get('/dash_karyawan', 'Home::dash_karyawan');
-$routes->get('/dash_cust', [ProdukController::class, 'dashboard_cust']);
+$routes->get('/dash_admin', [Home::class, 'dash_admin'], ['filter' => 'role:admin']);
+$routes->get('/dash_karyawan', [Home::class, 'dash_karyawan'], ['filter' => 'role: karyawan']);
+$routes->get('/dash_cust', [ProdukController::class, 'dashboard_cust'], ['filter' => 'role:cust']);
 $routes->get('/dash_cust/create_produk', [ProdukController::class, 'createProduk']);
 $routes->post('/dash_cust/store', [ProdukController::class, 'store']);
 $routes->get('/dash_cust/(:any)/edit_produk', [ProdukController::class, 'editProduk']);
