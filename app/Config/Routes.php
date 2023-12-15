@@ -7,6 +7,8 @@ use App\Controllers\BarangController;
 use App\Controllers\KaryawanController;
 use App\Controllers\ProdukController;
 use App\Controllers\ProfileController;
+use App\Controllers\Home;
+
 use Config\Auth as AuthConfig;
 
 
@@ -16,9 +18,9 @@ use Config\Auth as AuthConfig;
 $routes->get('/', 'Home::index');
 $routes->get('/list', 'Home::list');
 $routes->get('/tampil', 'Home::tampil');
-$routes->get('/dash_admin', 'Home::dash_admin');
-$routes->get('/dash_karyawan', 'Home::dash_karyawan');
-$routes->get('/dash_cust', [ProdukController::class, 'dashboard_cust']);
+$routes->get('/dash_admin', [Home::class, 'dash_admin'], ['filter' => 'role:admin']);
+$routes->get('/dash_karyawan', [Home::class, 'dash_karyawan'], ['filter' => 'role: karyawan']);
+$routes->get('/dash_cust', [ProdukController::class, 'dashboard_cust'], ['filter' => 'role:cust']);
 $routes->get('/dash_cust/create_produk', [ProdukController::class, 'createProduk']);
 $routes->post('/dash_cust/store', [ProdukController::class, 'store']);
 $routes->get('/dash_cust/(:any)/edit_produk', [ProdukController::class, 'editProduk']);
@@ -32,8 +34,8 @@ $routes->get('/produk', 'Home::produk');
 $routes->get('/list_barang', [BarangController::class, 'barang']);
 $routes->get('/keranjang', 'Home::keranjang');
 $routes->get('/login_cust', [LoginController::class, 'customer']);
-$routes->get('/login_admin', [LoginController::class, 'admin']);
-$routes->get('/login_karyawan', [LoginController::class, 'karyawan']);
+// $routes->get('/login_admin', [LoginController::class, 'admin']);
+// $routes->get('/login_karyawan', [LoginController::class, 'karyawan']);
 $routes->get('/register_cust', [LoginController::class, 'register_cust']);
 $routes->get('/list_barang', [ProdukController::class, 'list_barang']);
 $routes->get('/profile_admin', [ProfileController::class, 'admin']);
@@ -49,6 +51,7 @@ $routes->post('/karyawan/update/(:num)', [KaryawanController::class, 'update/$1'
 $routes->get('/karyawan/delete/(:num)', [KaryawanController::class, 'delete/$1']);
 
 
+
 // Myth:Auth routes file.
 $routes->group('', ['namespace' => 'App\Controllers'], static function ($routes) {
     // Load the reserved routes from Auth.php
@@ -60,11 +63,11 @@ $routes->group('', ['namespace' => 'App\Controllers'], static function ($routes)
     $routes->post($reservedRoutes['login'], 'AuthController::attemptLogin');
     $routes->get($reservedRoutes['logout'], 'AuthController::logout');
 
-    // Registration
+    // Registration     
     $routes->get($reservedRoutes['register'], 'AuthController::register', ['as' => $reservedRoutes['register']]);
     $routes->post($reservedRoutes['register'], 'AuthController::attemptRegister');
-    $routes->get($reservedRoutes['register_karyawan'], 'AuthController::register_karyawan', ['as' => $reservedRoutes['register_karyawan']]);
-    $routes->post($reservedRoutes['register_karyawan'], 'AuthController::attemptRegister_karyawan');
+    $routes->get('register_karyawan', 'LoginController::register_karyawan');
+   // $routes->post($reservedRoutes['register_karyawan'], 'AuthController::attemptRegister_karyawan');
 
     // Activation
     $routes->get($reservedRoutes['activate-account'], 'AuthController::activateAccount', ['as' => $reservedRoutes['activate-account']]);
