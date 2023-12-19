@@ -27,11 +27,13 @@ $routes->get('/dash_cust/(:any)/edit_produk', [ProdukController::class, 'editPro
 $routes->put('/dash_cust/(:any)', [ProdukController::class, 'updateProduk']);
 $routes->delete('/dash_cust/(:any)', [ProdukController::class, 'destroyProduk']);
 $routes->get('/produk', 'Home::produk');
+$routes->get('/edit_barang', 'Home::edit_barang');
+$routes->get('/tambah_barang', 'Home::tambah_barang');
 // $routes->get('/login_cust', [LoginController::class, 'customer']);
 // $routes->get('/login_admin', [LoginController::class, 'admin']);
 // $routes->get('/login_karyawan', [LoginController::class, 'karyawan']);
 // $routes->get('/register_cust', [LoginController::class, 'register_cust']);
-$routes->get('/list_barang', [BarangController::class, 'barang']);
+// $routes->get('/list_barang', [BarangController::class, 'barang']);
 $routes->get('/keranjang', 'Home::keranjang');
 $routes->get('/login_cust', [LoginController::class, 'customer']);
 // $routes->get('/login_admin', [LoginController::class, 'admin']);
@@ -66,8 +68,10 @@ $routes->group('', ['namespace' => 'App\Controllers'], static function ($routes)
     // Registration     
     $routes->get($reservedRoutes['register'], 'AuthController::register', ['as' => $reservedRoutes['register']]);
     $routes->post($reservedRoutes['register'], 'AuthController::attemptRegister');
+
     $routes->get('register_karyawan', 'LoginController::register_karyawan');
    // $routes->post($reservedRoutes['register_karyawan'], 'AuthController::attemptRegister_karyawan');
+
 
     // Activation
     $routes->get($reservedRoutes['activate-account'], 'AuthController::activateAccount', ['as' => $reservedRoutes['activate-account']]);
