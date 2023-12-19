@@ -1,43 +1,46 @@
-<?= $this->extend('layouts/app') ?>
-<?= $this->section('content') ?>
-
-    <!-- Container -->
-<div class="flex flex-wrap  w-full content-center justify-center ">
+<?= $this->extend('auth/templates/index'); ?>
+<?= $this->section('content'); ?>
+<div class="flex flex-wrap min-h-screen w-full content-center justify-center bg-gray-200 py-10">
   
   <!-- Login component -->
-  <div class="flex shadow-2xl">
+  <div class="flex shadow-md">
     <!-- Login form -->
     <div class="flex flex-wrap content-center justify-center rounded-l-md bg-white" style="width: 24rem; height: 32rem;">
       <div class="w-72">
         <!-- Heading -->
-        <h1 class="text-xl font-semibold">Sign In</h1>
+        <h1 class="text-xl font-semibold"><?=lang('Auth.loginTitle')?></h1>
 
         <!-- Form -->
-        <form class="mt-4">
+        <form action="<?= url_to('login') ?>" method="post">
+						<?= csrf_field() ?>
+
+            
           <div class="mb-3">
-            <label class="mb-2 block text-xs font-semibold">Email</label>
-            <input type="email" placeholder="Enter your email" class="block w-full rounded-md border border-gray-300 focus:border-purple-700 focus:outline-none focus:ring-1 focus:ring-purple-700 py-1 px-1.5 text-gray-500" />
+            <label class="mb-2 block text-xs font-semibold"><?=lang('Auth.email')?></label>
+            <input type="email"  name="login" placeholder="<?=lang('Auth.email')?>" class="block w-full rounded-md border border-gray-300 focus:border-purple-700 focus:outline-none focus:ring-1 focus:ring-purple-700 py-1 px-1.5 text-gray-500 <?php if (session('errors.login')) : ?>is-invalid<?php endif ?>" />
+              <div class="invalid-feedback">
+								<?= session('errors.login') ?>
+							</div>
           </div>
 
           <div class="mb-3">
-            <label class="mb-2 block text-xs font-semibold">Password</label>
-            <input type="password" placeholder="*****" class="block w-full rounded-md border border-gray-300 focus:border-purple-700 focus:outline-none focus:ring-1 focus:ring-purple-700 py-1 px-1.5 text-gray-500" />
+            <label class="mb-2 block text-xs font-semibold"><?=lang('Auth.password')?></label>
+            <input type="password" placeholder="<?=lang('Auth.password')?>" name="password"  class="block w-full rounded-md border border-gray-300 focus:border-purple-700 focus:outline-none focus:ring-1 focus:ring-purple-700 py-1 px-1.5 text-gray-500  <?php if (session('errors.password')) : ?>is-invalid<?php endif ?>" />
+              <div class="invalid-feedback">
+								<?= session('errors.password') ?>
+							</div>
           </div>
 
           <div class="mb-3">
-            <button class="mb-1.5 block w-full text-center text-white bg-teal-500 hover:bg-purple-900 px-2 py-1.5 rounded-md">Sign in</button>
-            <button class="flex flex-wrap justify-center w-full border border-gray-300 hover:border-gray-500 px-2 py-1.5 rounded-md">
-              <img class="w-5 mr-2" src="https://lh3.googleusercontent.com/COxitqgJr1sJnIDe8-jiKhxDx1FrYbtRHKJ9z_hELisAlapwE9LUPh6fcXIfb5vwpbMl4xl9H9TRFPc5NOO8Sb3VSgIBrfRYvW6cUA">
-              Sign in with Google
-            </button>
+            <button type="submit" class="mb-1.5 block w-full text-center text-white bg-teal-500 hover:bg-purple-900 px-2 py-1.5 rounded-md"><?=lang('Auth.loginAction')?></button>
           </div>
         </form>
 
         <!-- Footer -->
         <div class="text-center">
-          <span class="text-xs text-gray-400 font-semibold">Don't have account?</span>
-          <a href="#" class="text-xs font-semibold text-teal-400">Sign up</a>
+          <a href="<?= url_to('register_cust') ?>" class="text-xs font-semibold text-teal-400"><?=lang('Auth.needAnAccount')?></a> 
         </div>
+        
       </div>
     </div>
 
@@ -48,5 +51,4 @@
 
   </div>
 </div>
-
-<?= $this->endSection() ?>
+<?= $this->endSection(); ?>

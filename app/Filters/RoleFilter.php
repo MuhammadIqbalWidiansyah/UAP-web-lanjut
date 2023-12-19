@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Filters;
+namespace Myth\Auth\Filters;
 
 use CodeIgniter\Filters\FilterInterface;
 use CodeIgniter\HTTP\RedirectResponse;
@@ -41,8 +41,9 @@ class RoleFilter extends BaseFilter implements FilterInterface
 
             return redirect()->to($redirectURL)->with('error', lang('Auth.notEnoughPrivilege'));
         }
+        return redirect()->to(base_url());
 
-        throw new PermissionException(lang('Auth.notEnoughPrivilege'));
+        // throw new PermissionException(lang('Auth.notEnoughPrivilege'));
     }
 
     /**
@@ -59,3 +60,4 @@ class RoleFilter extends BaseFilter implements FilterInterface
     {
     }
 }
+    
