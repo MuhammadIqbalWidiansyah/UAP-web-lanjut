@@ -83,7 +83,7 @@
 <br>
 <div class="container">
 <a href="<?= base_url('/dash_cust/create_produk') ?>">
-   <button>Tambah Pengguna</button>
+   <button class="hidden sm:inline-flex ml-5 text-white bg-cyan-600 hover:bg-cyan-700 focus:ring-4 focus:ring-cyan-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center items-center mr-3" style="background-color: #F875AA;">Tambah Pengguna</button>
 </a>
 <div class="mp-4 ">
 <div class="row row-cols-2 g-3">

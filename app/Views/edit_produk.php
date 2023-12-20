@@ -73,6 +73,7 @@
             </div>
             </div>
         </aside>
+    </div>
         <div class="bg-gray-900 opacity-50 hidden fixed inset-0 z-10" id="sidebarBackdrop"></div>
         <div id="main-content" class="h-full w-full bg-gray-50 relative overflow-y-auto lg:ml-64">
             <main>
@@ -80,38 +81,37 @@
         <h1 class="text-3xl lg:text-4xl tracking-tight font-semibold leading-8 lg:leading-9 text-gray-800 dark:text-black dark:text-black">Form Edit Produk</h1>
     </div>
     <br>
-
     <div class="container">
         <form action="<?= base_url('/dash_cust/' . $produk['produk_id']) ?>" method="post" enctype="multipart/form-data">
             <input type="hidden" name="_method" value="put">
             <?= csrf_field() ?>
             <!-- Nama Produk -->
-            <label for="nama_produk">Nama Produk</label>
-            <input type="text" id="nama_produk" name="nama_produk" value="<?= $produk['nama_produk'] ?>" placeholder="Masukkan Nama Produk">
+            <label for="nama_produk" class="mb-3 block text-base font-medium text-[#07074D]">Nama Produk</label>
+            <input type="text" id="nama_produk" name="nama_produk" value="<?= $produk['nama_produk'] ?>" placeholder="Masukkan Nama Produk" class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md">
             <?php if (isset($validation) && $validation->hasError('nama_produk')): ?>
                 <p class="error"><?= $validation->getError('nama_produk') ?></p>
             <?php endif; ?><br>
             <!-- Deskripsi -->
             <label for="deskripsi">Deskripsi</label>
-            <input type="text" id="deskripsi" name="deskripsi" value="<?= $produk['deskripsi'] ?>" placeholder="Masukkan Deskripsi Produk">
+            <input type="text" id="deskripsi" name="deskripsi" value="<?= $produk['deskripsi'] ?>" placeholder="Masukkan Deskripsi Produk" class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md">
             <?php if (isset($validation) && $validation->hasError('deskripsi')): ?>
                 <p class="error"><?= $validation->getError('deskripsi') ?></p>
             <?php endif; ?><br>
             <!-- Harga -->
             <label for="harga">Harga</label>
-            <input type="text" id="harga" name="harga" value="<?= $produk['harga'] ?>" placeholder="Masukkan Harga Produk">
+            <input type="text" id="harga" name="harga" value="<?= $produk['harga'] ?>" placeholder="Masukkan Harga Produk" class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md">
             <?php if (isset($validation) && $validation->hasError('harga')): ?>
                 <p class="error"><?= $validation->getError('harga') ?></p>
             <?php endif; ?><br>
             <!-- Stok -->
             <label for="stok">Jumlah Produk</label>
-            <input type="text" id="stok" name="stok" value="<?= $produk['stok'] ?>" placeholder="Masukkan Jumlah Produk">
+            <input type="text" id="stok" name="stok" value="<?= $produk['stok'] ?>" placeholder="Masukkan Jumlah Produk" class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md">
             <?php if (isset($validation) && $validation->hasError('stok')): ?>
                 <p class="error"><?= $validation->getError('stok') ?></p>
             <?php endif; ?><br>
             <!-- Kategori Produk -->
-            <label for="kategori_produk">Kategori Produk</label>
-            <select name="kategori_produk" id="kategori_produk">
+            <label for="kategori_produk" >Kategori Produk</label>
+            <select name="kategori_produk" id="kategori_produk" class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md">
                     <?php
                         foreach ($kategori_produk as $item) {
                             ?>
@@ -128,7 +128,9 @@
             <?php if (isset($validation) && $validation->hasError('kategori_produk')): ?>
                 <p class="error"><?= $validation->getError('kategori_produk') ?></p>
             <?php endif; ?><br>
-            <button type="submit">Perbarui</button>
+            <br>
+            <button type="submit" class="hidden sm:inline-flex ml-5 text-white bg-cyan-600 hover:bg-cyan-700 focus:ring-4 focus:ring-cyan-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center items-center mr-3" style="background-color: #F875AA;">Perbarui</button>
         </form>
-    </div>
+        </div>
+    </main>
 <?= $this->endSection() ?>
