@@ -9,12 +9,12 @@
 
     <table border="1">
         <tr>
-            <th>Transaksi ID</th>
-            <th>User ID</th>
-            <th>Total Harga</th>
-            <th>Created At</th>
-            <th>Updated At</th>
-            <th>Deleted At</th>
+            <th scope="col" class="px-6 py-3">Transaksi ID</th>
+            <th scope="col" class="px-6 py-3">User ID</th>
+            <th scope="col" class="px-6 py-3">Total Harga</th>
+            <th scope="col" class="px-6 py-3">Created At</th>
+            <th scope="col" class="px-6 py-3">Updated At</th>
+            <th scope="col" class="px-6 py-3">Deleted At</th>
         </tr>
         <?php foreach ($riwayat_transaksi as $transaksi) : ?>
             <tr>
