@@ -83,7 +83,7 @@
 <br>
 <div class="container">
 <a href="<?= base_url('/dash_cust/create_produk') ?>">
-   <button>Tambah Pengguna</button>
+   <button>Tambah Produk</button>
 </a>
 <div class="mp-4 ">
 <div class="row row-cols-2 g-3">
@@ -97,6 +97,10 @@
 				Rp <?= $produk['harga'] ?> <br>(Tersisa <?= $produk['stok'] ?> produk)
 				</p>
 			</div>
+         <div class="flex items-center justify-between">
+            <span class="text-3xl font-bold text-gray-900 dark:text-white">$<?= $produk['harga'] ?></span>
+            <a href="<?= base_url('beli/' . $produk['produk_id']) ?>" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Beli</a>
+         </div>
 			<div class="flex items-center mt-2.5 mb-5">
 							<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
 								xmlns="http://www.w3.org/2000/svg">
