@@ -4,42 +4,41 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class TabelTransaksi extends Migration
+class CreateTransaksiTable extends Migration
 {
     public function up()
     {
         $this->forge->addField([
             'transaksi_id' => [
-                'type' => 'integer',
+                'type'=> 'integer',
                 'constraint' => '11',
                 'unsigned' => true,
                 'auto_increment' => true
             ],
             'user_id' => [
-                'type'=> 'integer',
-                'constraint' => '11',
+                'type' => 'INT',
+                'constraint' => 11,
                 'unsigned' => true,
+                'after' => 'transaksi_id',
             ],
-            'total_harga' => [
-                'type' => 'double',
-                'constraint' => '9,0',
+            'produk_id' => [
+                'type' => 'integer',
+                'constraint' => '11',
                 'unsigned' => true
             ],
-            'created_at' => [
-                'type' => 'datetime',
-                'null' => true
+            'jumlah' => [
+                'type' => 'integer',
+                'constraint' => '6',
+                'unsigned' => true
             ],
-            'updated_at' => [
-                'type' => 'datetime',
-                'null' => true
-            ],
-            'deleted_at' => [
+            'tanggal_transaksi' => [
                 'type' => 'datetime',
                 'null' => true
             ]
         ]);
         $this->forge->addKey('transaksi_id', true, true);
-        $this->forge->addForeignKey('user_id', 'user', 'user_id');
+        $this->forge->addForeignKey('user_id', 'users', 'id', 'CASCADE', 'CASCADE');
+        $this->forge->addForeignKey('produk_id', 'produk', 'produk_id');
         $this->forge->createTable('transaksi');
     }
 

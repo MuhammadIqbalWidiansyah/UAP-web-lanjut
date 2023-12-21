@@ -12,7 +12,7 @@ class TransaksiModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['user_id', 'total_harga', 'created_at', 'updated_at', 'deleted_at'];
+    protected $allowedFields    = ['user_id', 'produk_id', 'jumlah', 'tanggal_transaksi'];
 
     // Dates
     protected $useTimestamps = false;
@@ -38,8 +38,18 @@ class TransaksiModel extends Model
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
 
-    public function getTransaksiByUserId($user_id)
+    public function tambahTransaksi($data)
     {
-        return $this->where('user_id', $user_id)->findAll();
+        return $this->insert($data);
+    }
+
+    public function getTransactionHistory($userId)
+    {
+        return $this->db->table('transaksi')
+            ->select('transaksi.*, produk.nama_produk')
+            ->join('produk', 'produk.produk_id = transaksi.produk_id')
+            ->where('transaksi.user_id', $userId)
+            ->get()
+            ->getResultArray();
     }
 }

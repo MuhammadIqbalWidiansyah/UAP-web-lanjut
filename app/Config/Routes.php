@@ -20,7 +20,7 @@ $routes->get('/list', 'Home::list');
 $routes->get('/tampil', 'Home::tampil');
 $routes->get('/dash_admin', [Home::class, 'dash_admin'], ['filter' => 'role:admin']);
 $routes->get('/dash_karyawan', [Home::class, 'dash_karyawan'], ['filter' => 'role: karyawan']);
-$routes->get('/dash_cust', [ProdukController::class, 'dashboard_cust'], ['filter' => 'role:cust']);
+$routes->get('/dash_cust', [ProdukController::class, 'dashboard_cust'], ['filter' => 'role:customer']);
 $routes->get('/dash_cust/create_produk', [ProdukController::class, 'createProduk']);
 $routes->post('/dash_cust/store', [ProdukController::class, 'store']);
 $routes->get('/dash_cust/(:any)/edit_produk', [ProdukController::class, 'editProduk']);
@@ -51,6 +51,9 @@ $routes->post('/karyawan/store', [KaryawanController::class,'store']);
 $routes->get('/karyawan/edit/(:num)', [KaryawanController::class,'edit/$1']);
 $routes->post('/karyawan/update/(:num)', [KaryawanController::class, 'update/$1']);
 $routes->get('/karyawan/delete/(:num)', [KaryawanController::class, 'delete/$1']);
+
+$routes->get('beli/(:num)', 'TransaksiController::beliProduk/$1');
+$routes->get('riwayat_transaksi', 'TransaksiController::history');
 
 
 
