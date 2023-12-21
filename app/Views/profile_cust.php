@@ -10,6 +10,7 @@
     <script src="https://kit.fontawesome.com/b8f504d174.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    
     <div class="h-full bg-gray-200 p-8">
         <div class="bg-white rounded-lg shadow-xl pb-8"> 
             <div class="w-full h-[250px]">
