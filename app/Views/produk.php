@@ -80,9 +80,10 @@
             <div class="pt-6 px-4">
                 <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
                     <div class="p-4">
-                        <button class="middle none center mr-3 rounded-lg bg-pink-500 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                data-ripple-light="true">
-                Tambah Produk
+						<a href="<?= base_url('/dash_cust/create_produk') ?>">
+   <button class="hidden sm:inline-flex ml-5 text-white bg-cyan-600 hover:bg-cyan-700 focus:ring-4 focus:ring-cyan-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center items-center mr-3" style="background-color: #F875AA;">Tambah Produk</button>
+</a>
+
             </button>
                         </div>
 			<table class="w-full text-sm text-left text-black-500 dark:text-black-400">
